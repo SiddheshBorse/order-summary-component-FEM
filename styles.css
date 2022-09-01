@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --hover: #766cf1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color: var(--Paleblue);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: inline-block;
+    background-color: white;
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.wrapper img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 1rem 1rem 0 0; */
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.text h1 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    font-weight: 900;
+}
+
+.text p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: grey;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.annualplan {
+    background-color: var(--Verypaleblue);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.icondetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.icondetails img {
+    height: 90%;
+    width: auto;
+
+}
+
+.details {
+    margin-left: 10%;
+}
+
+.details h2 {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.details h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: grey;
+}
+
+.annualplan h4 {
+    color: var(--Brightblue);
+    text-decoration: underline;
+}
+
+.annualplan h4:hover {
+    text-decoration: none;
+    color: var(--hover);
+    cursor: pointer;
+}
+
+.change {
+    margin: 0;
+}
+
+.paymentbutton {
+    width: 100%;
+    color: white;
+    background-color: var(--Brightblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem 0 1rem 0;
+    font-weight: 700;
+    letter-spacing: 2;
+    margin-top: 2rem;
+}
+
+.paymentbutton:hover {
+    background-color: var(--hover);
+    box-shadow: 0 10px 30px var(--hover);
+    cursor: pointer;
+}
+
+.cancelorder {
+    font-weight: 700;
+    margin-top: 2rem;
+    color: rgb(100, 99, 99);
+}
+
+.cancelorder:hover {
+    cursor: pointer;
+    color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+    .wrapper {
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .wrapper {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .wrapper {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 475px) {
+    .wrapper {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .wrapper {
+        width: 90%;
+    }
+    .text{
+        padding: 1rem;
+    }
+}
