@@ -141,7 +141,7 @@ body {
 
 .paymentbutton:hover {
     background-color: var(--hover);
-    box-shadow: 0 10px 30px var(--hover);
+    box-shadow: 0 10px 15px var(--hover);
     cursor: pointer;
 }
 
